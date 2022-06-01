@@ -5,10 +5,10 @@ import java.awt.Image;
 import java.awt.Rectangle;
 
 public class Entity {
-	int x;
-	int y;
-	int width;
-	int height;
+	public int x;
+	public int y;
+	public int width;
+	public int height;
 	
 	public Entity(int x ,int y,int width,int height) {
 		this.x = x;
@@ -25,12 +25,12 @@ public class Entity {
 	public Entity() {
 	}
 	
-	//»ñÈ¡¾ØĞÎ½øĞĞÅö×²¼ì²â
+	//è·å–çŸ©å½¢è¿›è¡Œç¢°æ’æ£€æµ‹
 	public Rectangle getRect(){
 	      return  new Rectangle((int)x,(int) y, width, height);
 	}
 	
-	//»­³öÍ¼Ïñ
+	//ç”»å‡ºå›¾åƒ
 	public static void paint(Graphics g, Image picturename, int x_picture, int y_picture) {
 		g.drawImage(picturename, x_picture, y_picture,null);
 	}
